@@ -102,7 +102,7 @@ function love.keypressed(key)
 		love.event.quit()
 	end
 	if key=="space" then
-		love.system.setClipboardText("love.graphics.setColor("..color.red..", "..color.green..", "..color.blue..", "..")")
+		love.system.setClipboardText("love.graphics.setColor("..string.format("%0.3f, %0.3f, %0.3f)",color.red, color.green, color.blue))
 	end
 end
 
